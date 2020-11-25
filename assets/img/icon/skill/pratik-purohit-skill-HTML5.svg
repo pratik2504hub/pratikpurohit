@@ -1,7 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <title>HTML5 Logo Badge</title>
-  <path fill="#E34F26" d="M71,460 L30,0 481,0 440,460 255,512"/>
-  <path fill="#EF652A" d="M256,472 L405,431 440,37 256,37"/>
-  <path fill="#EBEBEB" d="M256,208 L181,208 176,150 256,150 256,94 255,94 114,94 115,109 129,265 256,265zM256,355 L255,355 192,338 188,293 158,293 132,293 139,382 255,414 256,414z"/>
-  <path fill="#FFF" d="M255,208 L255,265 325,265 318,338 255,355 255,414 371,382 372,372 385,223 387,208 371,208zM255,94 L255,129 255,150 255,150 392,150 392,150 392,150 393,138 396,109 397,94z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E34F26;}
+	.st1{fill:#EF652A;}
+	.st2{fill:#EBEBEB;}
+	.st3{fill:#FFFFFF;}
+</style>
+<title>HTML5 Logo Badge</title>
+<g>
+	<path class="st0" d="M112,415.2l-32-359h352l-32,359l-144.4,40.6"/>
+	<path class="st1" d="M256.4,424.6l116.3-32L400,85.1H256.4"/>
+	<path class="st2" d="M256.4,218.5h-58.5l-3.9-45.3h62.4v-43.7h-0.8h-110l0.8,11.7L157.3,263h99.1V218.5z M256.4,333.3h-0.8
+		L206.4,320l-3.1-35.1h-23.4h-20.3l5.5,69.5l90.5,25h0.8V333.3z"/>
+	<path class="st3" d="M255.6,218.5V263h54.6l-5.5,57l-49.2,13.3v46l90.5-25l0.8-7.8l10.1-116.3l1.6-11.7h-12.5H255.6z M255.6,129.6
+		v27.3v16.4l0,0h106.9l0,0l0,0l0.8-9.4l2.3-22.6l0.8-11.7H255.6z"/>
+</g>
 </svg>

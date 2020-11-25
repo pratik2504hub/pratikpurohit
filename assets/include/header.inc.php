@@ -2,10 +2,39 @@
 <html lang="en" >
     <head>
         <meta charset="UTF-8">
-        <title>Pratik Purohit</title>
+        <title>Pratik Purohit | Full Stack Web Designer and Developer in Mumbai</title>
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta name="keywords" content="Pratik Purohit, Web Design & Development, custom web development services, professional web development, Application Development E-Commerce, Internet or Digital Marketing like SEO, SMO, PPC, Social Media handling, Cretives, Logo Designing, Marketing Campaign Management and designing, Corporate Identity, Blog Development, Web Development company, Front End Web Development, Mumbai">
+        <meta name="description" content="I am Pratik Purohit from Mumbai. I can provide Web Design & Development, custom web development services, professional web development, Application Development, E-Commerce, Internet or Digital Marketing, Blog Development"/>
+        <meta name="author" content="Pratik Purohit, purohitpratik2504@gmail.com">
+        <meta name="subject" content="Pratik Purohit | Full Stack Web Designer and Developer in Mumbai">
+        <meta name="robots" content="index, follow"/>
+        <meta name="revised" content="Monday, June 18th, 2020, 12:15 am" />
+        <meta name="abstract" content="Pratik Purohit | Full Stack Web Designer and Developer in Mumbai">
+        <meta name="topic" content="Web Designer and Developer in Mumbai">
+        <meta name="summary" content="Web Designer and Developer in Mumbai">
+        <meta name="Classification" content="Business">
+        <meta name="designer" content="Pratik Purohit">
+        <meta name="og:title" content="Pratik Purohit | Full Stack Web Designer and Developer in Mumbai"/>
+        <meta name="og:type" content="website"/>
+        <meta name="og:url" content="https://www.pratikpurohit.com/"/>
+        <meta name="og:image" content="./assets/img/pratik-purohit-full-stack-developer.png"/>
+        <meta name="og:site_name" content="Pratik Purohit | Full Stack Web Designer and Developer in Mumbai"/>
+        <meta name="og:description" content="I am Pratik Purohit from Mumbai. I can provide Web Design & Development, custom web development services, professional web development, Application Development, E-Commerce, Internet or Digital Marketing, Blog Development"/>
+        <meta name="twitter:card" content="I am Pratik Purohit from Mumbai. I can provide Web Design & Development, custom web development services, professional web development, Application Development, E-Commerce, Internet or Digital Marketing, Blog Development"/>
+        <meta name="twitter:description" content="I am Pratik Purohit from Mumbai. I can provide Web Design & Development, custom web development services, professional web development, Application Development, E-Commerce, Internet or Digital Marketing, Blog Development"/>
+        <meta name="twitter:title" content="Acube Online | Digital Marketing | SEO, SMO, SMM, PPC"/>
+        <meta name="twitter:image" content="images/about/acube-icon.png" />
+        <meta name="twitter:image:alt" content="Pratik Purohit | Full Stack Web Designer and Developer in Mumbai" />
+        <meta name="twitter:creator:id" content="1173904262536945665" />
+        <meta name="twitter:site" content="@impratikpurohit" />
+        <meta name="twitter:creator" content="@impratikpurohit" />
+        <meta name="og:email" content="purohitpratik2504@gmail.com"/>
+        <meta name="og:phone_number" content="9987511946"/>
+        <meta property="og:type" content="website"/>
 
         <link href='https://fonts.googleapis.com/css?family=Muli:300|Raleway:300,700' rel='stylesheet' type='text/css'>
+        <link rel="icon" href="./assets/img/pratik-purohit-full-stack-developer.ico" type="image/ico">
         <link rel='stylesheet' href='./assets/css/bootstrap.min.css'>
         <link rel='stylesheet' href='./assets/css/font-awesome.min.css'>
         <link rel="stylesheet" href="./assets/css/style.css">
