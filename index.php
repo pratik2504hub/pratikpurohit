@@ -31,7 +31,7 @@
     </div>
       </div>
   </section>
-<section id="services" class="container main-section text-black">
+<section id="services" class="container main-section text-black" style="display:none">
     <h2 class="heading">My Services</h2>
     <div class="row text-center">
         

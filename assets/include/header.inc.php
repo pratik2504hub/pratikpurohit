@@ -53,7 +53,7 @@
             <nav class="header__nav">
                 <ul class="nav">
                     <li class="header__nav__item"><a href="#about" data-ref="about">about</a></li>
-                    <li class="header__nav__item"><a href="#services" data-ref="services">services</a></li>
+                    <li class="header__nav__item" style="display:none"><a href="#services" data-ref="services">services</a></li>
                     <li class="header__nav__item"><a href="#skill" data-ref="skill">skills</a></li>
                     <li class="header__nav__item"><a href="#contact" data-ref="contact">contact</a></li>
                 </ul>

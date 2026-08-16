@@ -14,15 +14,25 @@ function jsInit() {
 
   function updateNavLabels() {
     for (var i = 0; i < sections.length; i++) {
+      var section = sections[i];
+      var sectionId = section.getAttribute("id");
+      var navLabel = document.querySelector('.header__nav__item a[data-ref="' + sectionId + '"]');
+
+      if (!navLabel || section.offsetParent === null) {
+        continue;
+      }
+
+      var sectionTop = section.getBoundingClientRect().top;
+      var sectionBottom = section.getBoundingClientRect().bottom;
+
       if (
-        prevSectionIndex != i &&
-        ((sections[i].getBoundingClientRect().top < window.innerHeight / 3 &&
-          sections[i].getBoundingClientRect().top >= 0) ||
-          (sections[i].getBoundingClientRect().bottom > 3 * window.innerHeight / 4 &&
-            sections[i].getBoundingClientRect().bottom < sections[i].getBoundingClientRect().height))
+        prevSectionIndex !== i &&
+        ((sectionTop < window.innerHeight / 3 && sectionTop >= 0) ||
+          (sectionBottom > 3 * window.innerHeight / 4 &&
+            sectionBottom < section.getBoundingClientRect().height))
       ) {
         [].forEach.call(navLabels, removeClass("is-active"));
-        navLabels[i].classList.add("is-active");
+        navLabel.parentNode.classList.add("is-active");
         prevSectionIndex = i;
       }
     }
