@@ -25,11 +25,11 @@ Do not reduce the site to a generic developer or PHP-developer portfolio. PHP is
 ## Page Structure
 
 - [index.html](index.html) - homepage with hero, avatar, leadership positioning, highlights, proof areas and CTAs
-- [about/index.html](about/index.html) - career story and leadership philosophy
+- [about/index.html](about/index.html) - resume-backed professional summary, leadership approach and recruiter/consulting positioning
 - [experience/index.html](experience/index.html) - structured professional timeline
 - [projects/index.html](projects/index.html) - enterprise and independent case-study cards
 - [skills/index.html](skills/index.html) - categorised skills across architecture, delivery, backend, cloud, DevOps, data, security, observability, leadership, AI and tools
-- [architecture/index.html](architecture/index.html) - solution architecture capability page
+- [expertise/index.html](expertise/index.html) - broad expertise overview spanning architecture, engineering leadership, cloud/platform, DevOps/reliability, security, backend/data and AI-assisted engineering
 - [cloud-devops/index.html](cloud-devops/index.html) - AWS, Azure, Kubernetes, CI/CD and reliability capability page
 - [security/index.html](security/index.html) - engineering-led security, DevSecOps and production-readiness page
 - [ai/index.html](ai/index.html) - AI-assisted engineering, Smart PDF Audio Reader and Hermes workflow positioning
@@ -68,6 +68,7 @@ Technical SEO files:
 Structured data currently includes:
 
 - `Person` and `WebSite` on the homepage
+- `ProfilePage` with a `Person` main entity on the About page
 - `BreadcrumbList` on inner pages
 - `CollectionPage` on the Projects page
 - `SoftwareApplication` on the AI page
@@ -84,6 +85,9 @@ These files must stay factual. Do not add private information, credentials, inte
 ## Content Rules
 
 - Use the current resume PDF, repository content and Pratik's explicit instructions as source of truth.
+- Keep the About page section named `Professional Summary`, not `Professional evolution`.
+- The About-page Professional Summary must remain a concise, resume-backed answer to who Pratik is, his 9+ years of experience, leadership level, industries, architecture/cloud/DevOps/security scope, teams of up to 18 and accountable AI-assisted engineering approach.
+- Write the Professional Summary for people and answer engines: use direct factual statements, natural search terminology and clear entity context without keyword stuffing or copying the resume verbatim.
 - SmartConnect Technologies should be shown as `Sept 2025 - Aug 2026`, not `Present`.
 - Do not feature the 40M+ database optimisation as a homepage branding metric. It may appear only in detailed experience/case-study context if needed.
 - Supported homepage metrics include 9+ years experience, teams up to 18, 82% to 99% AWS availability improvement and 40% faster deployments.

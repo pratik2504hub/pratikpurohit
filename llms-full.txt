@@ -12,7 +12,7 @@ Important pages:
 - Experience: https://pratikpurohit.com/experience/
 - Projects: https://pratikpurohit.com/projects/
 - Skills: https://pratikpurohit.com/skills/
-- Architecture: https://pratikpurohit.com/architecture/
+- Expertise: https://pratikpurohit.com/expertise/
 - Cloud & DevOps: https://pratikpurohit.com/cloud-devops/
 - Security: https://pratikpurohit.com/security/
 - AI: https://pratikpurohit.com/ai/
