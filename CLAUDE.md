@@ -1,43 +1,54 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code when working with this repository.
 
 ## Running the Site
 
-This is a PHP-based static personal portfolio site served via XAMPP. To view it locally:
+This is now a fully static personal portfolio website for Pratik Purohit. It is compatible with GitHub Pages and can be opened directly from:
 
-1. Start Apache in XAMPP Control Panel
-2. Open `http://localhost/pratikpurohit/` in a browser
+- `index.html`
 
-There is no build step, package manager, or test suite — changes to files are reflected immediately on reload.
+There is no build step, package manager, backend runtime, server-side processing, or test suite. Changes to HTML, CSS, JavaScript, and assets are reflected on browser reload.
+
+## GitHub Pages Deployment
+
+Deploy the repository as a plain static site:
+
+1. Push the repository to GitHub.
+2. In repository settings, enable GitHub Pages.
+3. Choose the branch and root folder that contain `index.html`.
+4. GitHub Pages will serve the site without any server-side processing.
 
 ## Architecture
 
-The site is a single-page PHP portfolio for Pratik Purohit, a Full Stack Developer based in Mumbai.
+The site is a single-page static portfolio.
 
-**Page assembly via PHP includes:**
-- [assets/include/header.inc.php](assets/include/header.inc.php) — full `<head>` block plus `<header>` nav with social links
-- [index.php](index.php) — main content: About, Services, Skills sections
-- [assets/include/footer.inc.php](assets/include/footer.inc.php) — Contact form and social links, then closes `<body>`/`</html>`
+**Primary files:**
 
-**Sections (anchor-linked in nav):** `#about`, `#skill`, `#contact`. The `#services` section exists in `index.php` but is currently hidden along with its nav item.
+- [index.html](index.html) - complete page document with metadata, fixed header, navigation, About, hidden Services, Skills, Contact, footer social links, and script include.
+- [assets/css/style.css](assets/css/style.css) - custom site styles and responsive behavior.
+- [assets/js/script.js](assets/js/script.js) - vanilla JavaScript for scroll-based active nav highlighting, mobile nav toggle, and optional portfolio filtering via `data-cat` attributes.
+- [assets/Pratik-Purohit-Resume.pdf](assets/Pratik-Purohit-Resume.pdf) - downloadable resume linked from the About section.
+
+**Sections linked by navigation:** `#about`, `#skill`, `#contact`. The `#services` section remains in the markup but is hidden, matching the existing site behavior.
 
 **Frontend stack:**
-- Bootstrap 3 (local copy at `assets/css/bootstrap.min.css`) — grid uses `col-xs`, `col-sm`, `col-md` classes
-- Font Awesome (local copy at `assets/css/font-awesome.min.css`)
-- Google Fonts: Muli + Raleway loaded from CDN
-- Custom styles in [assets/css/style.css](assets/css/style.css)
-- Vanilla JS in [assets/js/script.js](assets/js/script.js) — handles scroll-based active nav highlighting, mobile nav toggle, and portfolio category filtering via `data-cat` attributes
 
-**No JavaScript framework, no bundler, no backend logic** — PHP is used only for header/footer include composition.
+- Plain HTML
+- Bootstrap 3 local stylesheet at `assets/css/bootstrap.min.css`
+- Google Fonts: Muli and Raleway loaded from CDN
+- Vanilla JavaScript only
 
 ## Key Notes
 
-- The `index.html` file redirects to `index.php`, which is the real entry point.
-- Several `<a href="#">` links and buttons have the `hidden` class applied — these are placeholder "Know More" buttons that are intentionally not visible.
-- Google Maps integration is fully commented out in `script.js`.
-- The `assets/img/source/` directory contains raw design source files (`.ai`, `.eps`, fonts, zips) — not served to users, just version-controlled originals.
-- Social links appear twice: once in the header nav and once in the footer contact section — both are in the PHP includes, so update both places when changing social URLs.
+- `index.html` is the only site entry point.
+- All local CSS, JavaScript, image, icon, and resume paths use GitHub Pages-compatible relative URLs.
+- The contact section uses direct clickable email and phone links:
+  - `mailto:purohitpratik2504@gmail.com`
+  - `tel:+919987511946`
+- Social links appear twice: once in the fixed header and once in the footer contact section. Update both places when changing social URLs.
+- Several hidden placeholder "Know More" links remain inside the hidden Services section to preserve the previous markup and behavior.
+- The `assets/img/source/` directory contains raw design source files and brand asset archives. These are version-controlled originals, not required for page rendering.
 
 ## Resume and Portfolio Gap Analysis
 
@@ -45,7 +56,6 @@ Source reviewed: `C:\Users\Pratik\Downloads\Resume-14-08-2026.docx.pdf` as user-
 
 ### Highest-Priority Gaps
 
-- The portfolio resume download points to `./assets/Pratik-Purohit-Resume.pdf`, but that file is not present in the repository. Add the current resume PDF to `assets/` or update the link to the correct served file.
 - The portfolio has no work-experience or case-study section, while the resume is strongest around enterprise delivery, architecture, cloud migration, security governance, CI/CD, and measurable operational wins.
 - The resume and website LinkedIn URLs do not match. Resume uses `linkedin.com/in/pratik-purohit-leads`; the website uses `linkedin.com/in/pratik-purohit-web-developer/`.
 - The site positions Pratik as "Technical Manager & Full Stack Developer"; the resume positions him as a hands-on Technical Manager and Architect. Align the headline and SEO copy around the stronger architecture/delivery/security leadership story.
@@ -75,7 +85,6 @@ Source reviewed: `C:\Users\Pratik\Downloads\Resume-14-08-2026.docx.pdf` as user-
 - The hidden services section still contains older freelance/service positioning. Either remove it or repurpose it into current professional capabilities.
 - Add structured data such as `Person`, `WebSite`, and possibly `ProfilePage` JSON-LD for SEO.
 - Add Open Graph/Twitter metadata that reflects the architecture/technical manager positioning, not only generic full-stack development.
-- The contact form depends on PHP `mail()`, which can fail silently on many hosts. Consider SMTP or a reliable form endpoint if this site is used for hiring or client leads.
 
 ### Resume-to-Portfolio Alignment Gaps
 
