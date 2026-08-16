@@ -22,6 +22,13 @@ Do not reduce the site to a generic developer or PHP-developer portfolio. PHP is
 - Runtime stack: HTML5, CSS3 and vanilla JavaScript only
 - No PHP, Node.js runtime, React, Angular, Vue, backend APIs, databases or server-side rendering
 
+## Analytics
+
+- Analytics provider: Google Analytics 4
+- Measurement ID: `G-MYH1TMCSFE`
+- Every HTML page, including [404.html](404.html), contains the asynchronous Google tag directly before `</head>`.
+- New HTML pages must include the same tag exactly once. Do not change the measurement ID or add a second Google tag without Pratik's explicit instruction.
+
 ## Page Structure
 
 - [index.html](index.html) - homepage with hero, avatar, leadership positioning, highlights, proof areas and CTAs
@@ -133,3 +140,4 @@ Also verify:
 - JSON-LD is valid JSON
 - No page has duplicate or missing H1
 - No accidental `noindex` exists except on `404.html`
+- Every HTML page contains exactly one Google tag loader and one `gtag('config', 'G-MYH1TMCSFE')` call
