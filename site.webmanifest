@@ -1,0 +1,15 @@
+{
+  "name": "Pratik Purohit Portfolio",
+  "short_name": "Pratik Purohit",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1d4ed8",
+  "icons": [
+    {
+      "src": "assets/img/pratik-purohit-full-stack-developer.png",
+      "sizes": "1472x1920",
+      "type": "image/png"
+    }
+  ]
+}
