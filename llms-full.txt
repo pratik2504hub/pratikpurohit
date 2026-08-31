@@ -11,6 +11,7 @@ Important pages:
 - About: https://pratikpurohit.com/about/
 - Experience: https://pratikpurohit.com/experience/
 - Projects: https://pratikpurohit.com/projects/
+- SPAR - Smart PDF Audio Reader: https://pratikpurohit.com/spar/
 - Skills: https://pratikpurohit.com/skills/
 - Expertise: https://pratikpurohit.com/expertise/
 - Cloud & DevOps: https://pratikpurohit.com/cloud-devops/
@@ -32,6 +33,9 @@ Boundaries:
 
 ## Public Professional Summary
 Pratik combines hands-on engineering with technical management, architecture governance, delivery planning, cloud/platform work, security coordination and AI-assisted engineering practices.
+
+## Independent Product
+SPAR (Smart PDF Audio Reader) is Pratik's Android application for turning text-based PDF documents into natural text-to-speech audio. It includes smart chapter detection, background playback, Android Auto support and saved listening progress. Official page: https://pratikpurohit.com/spar/
 
 ## Resume-Supported Highlights
 - 9+ years experience.

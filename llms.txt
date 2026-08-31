@@ -11,6 +11,7 @@ Important pages:
 - About: https://pratikpurohit.com/about/
 - Experience: https://pratikpurohit.com/experience/
 - Projects: https://pratikpurohit.com/projects/
+- SPAR - Smart PDF Audio Reader: https://pratikpurohit.com/spar/
 - Skills: https://pratikpurohit.com/skills/
 - Expertise: https://pratikpurohit.com/expertise/
 - Cloud & DevOps: https://pratikpurohit.com/cloud-devops/
