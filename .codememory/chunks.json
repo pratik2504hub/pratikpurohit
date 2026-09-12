@@ -1,8 +1,8 @@
 [
   {
-    "id": "8_ErE6BxLa2f6uzuMEOQC",
+    "id": "ZDLU9rz_kxO97xxDmKn5F",
     "chunk": {
-      "id": "8_ErE6BxLa2f6uzuMEOQC",
+      "id": "ZDLU9rz_kxO97xxDmKn5F",
       "filepath": "d:\\xampp\\htdocs\\pratikpurohit\\assets\\js\\script.js",
       "content": "(function(){var t=document.querySelector('[data-nav-toggle]'),n=document.querySelector('[data-nav]');if(t&&n){t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',String(o))});n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('is-open');t.setAttribute('aria-expanded','false')}})}})();\r\n",
       "type": "module",
@@ -11,7 +11,7 @@
       "endLine": 1,
       "language": "javascript",
       "metadata": {
-        "lastModified": "2026-08-31T05:06:24.311Z"
+        "lastModified": "2026-09-11T20:01:55.132Z"
       }
     },
     "embedding": [

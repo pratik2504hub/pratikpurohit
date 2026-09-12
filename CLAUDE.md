@@ -107,9 +107,9 @@ These files must stay factual. Do not add private information, credentials, inte
 
 - Keep the site deployable by GitHub Pages without server-side processing.
 - Do not reintroduce PHP files, server-side includes, form handlers or local XAMPP assumptions.
-- Use file-relative paths for every local HTML, CSS, JavaScript, image, icon, manifest and PDF reference. Root-level pages use paths such as `assets/css/style.css`; directory pages use paths such as `../assets/css/style.css`.
-- Internal navigation must target real static files (`about/index.html` from the root and `../about/index.html` from directory pages) so links work on the custom domain, GitHub Pages project URLs and direct `file://` previews.
-- Keep absolute `https://pratikpurohit.com/...` URLs only for canonical metadata, Open Graph metadata, structured data, `robots.txt` and `sitemap.xml`.
+- Use file-relative paths for local CSS, JavaScript, image, icon, manifest and PDF assets. Root-level pages use paths such as `assets/css/style.css`; directory pages use paths such as `../assets/css/style.css`.
+- Internal navigation must target clean production directory URLs (`/about/`, `/experience/`, `/projects/`) so canonical, sitemap and internal-link signals all agree. Do not link to `/index.html` variants.
+- Keep absolute `https://pratikpurohit.com/...` URLs for canonical metadata, Open Graph metadata, structured data, `robots.txt` and `sitemap.xml`; use root-relative clean URLs for internal navigation.
 - Keep `mailto:purohitpratik2504@gmail.com` and `tel:+919987511946` as the contact mechanisms.
 - Keep the resume link pointed at a real file.
 - Resume links must use `target="_blank"` with `rel="noopener noreferrer"` and must not use the HTML `download` attribute.
@@ -133,7 +133,7 @@ Also verify:
 - `robots.txt` references `https://pratikpurohit.com/sitemap.xml`
 - `sitemap.xml` contains only real canonical production URLs
 - All local CSS, JS, image, icon, manifest and PDF links resolve
-- No local `href`, `src` or web-manifest asset path begins with `/`
+- No internal navigation link points to an `index.html` URL; asset `href`, `src` and web-manifest paths remain file-relative
 - Resume links open the PDF in a new browser tab
 - Email and phone links work
 - Mobile navigation opens, closes and remains keyboard accessible
