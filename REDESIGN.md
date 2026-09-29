@@ -1,6 +1,6 @@
 # pratikpurohit.com: full redesign brief for Claude Code
 
-Owner: Pratik Purohit (Technical Manager | Solution Architect, Mumbai).
+Owner: Pratik Purohit (Technical Manager | Solution Architect, Bengaluru).
 Stack: **static multi-page HTML** (keep it; no framework, no build step unless trivial). Clean URLs: `/about/`, `/experience/`, `/projects/`, `/skills/`, `/expertise/`, `/consulting/`, `/contact/`, plus `/sitemap.xml` and `/assets/Pratik-Purohit-Resume.pdf`.
 
 **Reference implementation:** `index.html` (homepage, already approved). Every other page must match its tokens, components, tone and SEO pattern. Read it first and reuse its CSS.
