@@ -1,1 +1,0 @@
-(function(){var t=document.querySelector('[data-nav-toggle]'),n=document.querySelector('[data-nav]');if(t&&n){t.addEventListener('click',function(){var o=n.classList.toggle('is-open');t.setAttribute('aria-expanded',String(o))});n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('is-open');t.setAttribute('aria-expanded','false')}})}})();

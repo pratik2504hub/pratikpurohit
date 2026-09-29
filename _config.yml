@@ -1,0 +1,5 @@
+# GitHub Pages: keep internal documents and design references off the public site.
+exclude:
+  - CLAUDE.md
+  - REDESIGN.md
+  - ui-sample.html

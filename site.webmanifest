@@ -1,10 +1,10 @@
 {
-  "name": "Pratik Purohit Portfolio",
+  "name": "Pratik Purohit | Solution Architect & Technical Manager",
   "short_name": "Pratik Purohit",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f8fafc",
-  "theme_color": "#1d4ed8",
+  "background_color": "#FAF7F2",
+  "theme_color": "#FAF7F2",
   "icons": [
     {
       "src": "assets/img/pratik-purohit-full-stack-developer.png",
