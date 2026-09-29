@@ -31,24 +31,26 @@ Do not reduce the site to a generic developer or PHP-developer portfolio. PHP is
 
 ## Page Structure
 
-- [index.html](index.html) - homepage with hero, avatar, leadership positioning, highlights, proof areas and CTAs
+- [index.html](index.html) - homepage with hero, avatar, case-study accordion, career steps, hire/consult paths, FAQ and CTAs
 - [about/index.html](about/index.html) - resume-backed professional summary, leadership approach and recruiter/consulting positioning
 - [experience/index.html](experience/index.html) - structured professional timeline
-- [projects/index.html](projects/index.html) - enterprise and independent case-study cards
+- [projects/index.html](projects/index.html) - nine case studies with shareable anchors (`aws-migration`, `cicd-modernisation`, `security-compliance`, `enterprise-integration`, `aviation-project`, `aks-kubernetes`, `observability-siem`, `hermes-agentic-ai`, `spar`) and a sticky index
 - [skills/index.html](skills/index.html) - categorised skills across architecture, delivery, backend, cloud, DevOps, data, security, observability, leadership, AI and tools
 - [expertise/index.html](expertise/index.html) - broad expertise overview spanning architecture, engineering leadership, cloud/platform, DevOps/reliability, security, backend/data and AI-assisted engineering
 - [cloud-devops/index.html](cloud-devops/index.html) - AWS, Azure, Kubernetes, CI/CD and reliability capability page
 - [security/index.html](security/index.html) - engineering-led security, DevSecOps and production-readiness page
 - [ai/index.html](ai/index.html) - AI-assisted engineering, Smart PDF Audio Reader and Hermes workflow positioning
-- [consulting/index.html](consulting/index.html) - senior consulting offerings
+- [consulting/index.html](consulting/index.html) - six consulting services with anchors (`solution-architecture`, `cloud-devops`, `application-modernisation`, `engineering-leadership`, `security-readiness`, `ai-assisted-engineering`), each linked to case studies
+- [spar/index.html](spar/index.html) - SPAR Smart PDF Audio Reader product page
 - [resume/index.html](resume/index.html) - resume summary and PDF access
 - [contact/index.html](contact/index.html) - email, phone, LinkedIn and verified social links
 - [404.html](404.html) - GitHub Pages custom 404 page
 
 ## Key Assets
 
-- [assets/css/style.css](assets/css/style.css) - complete custom design system and responsive layout
-- [assets/js/script.js](assets/js/script.js) - mobile navigation toggle only
+- [assets/css/site.css](assets/css/site.css) - shared design system (tokens, components, responsive layout) used by every page
+- [assets/js/site.js](assets/js/site.js) - mobile menu, homepage case accordion, case-study index highlight, skills core toggle and contact copy buttons
+- [REDESIGN.md](REDESIGN.md) and [ui-sample.html](ui-sample.html) - approved redesign brief and homepage reference; excluded from the published site by [_config.yml](_config.yml)
 - [assets/img/pratik-purohit-full-stack-developer.png](assets/img/pratik-purohit-full-stack-developer.png) - illustrated avatar; keep this prominently visible unless Pratik explicitly approves replacing it
 - [assets/img/pratik-purohit-full-stack-developer.ico](assets/img/pratik-purohit-full-stack-developer.ico) - favicon
 - [assets/Pratik-Purohit-Resume.pdf](assets/Pratik-Purohit-Resume.pdf) - PDF resume opened by site links in a new browser tab
@@ -74,11 +76,15 @@ Technical SEO files:
 
 Structured data currently includes:
 
-- `Person` and `WebSite` on the homepage
-- `ProfilePage` with a `Person` main entity on the About page
-- `BreadcrumbList` on inner pages
-- `CollectionPage` on the Projects page
-- `SoftwareApplication` on the AI page
+- One `@graph` per page that reuses `https://pratikpurohit.com/#person` and `https://pratikpurohit.com/#website`
+- `WebSite`, `Person`, `WebPage` and `FAQPage` on the homepage
+- `ProfilePage` with a `Person` main entity on the About and Experience pages
+- `BreadcrumbList` on inner pages, matching the visible breadcrumbs
+- `CollectionPage` with an `ItemList` of case studies and `FAQPage` on the Projects page
+- `ProfessionalService` with an `OfferCatalog` and `FAQPage` on the Consulting page
+- `ContactPage` on the Contact page
+- `SoftwareApplication` on the AI page and `MobileApplication` plus `FAQPage` on the SPAR page
+- FAQ JSON-LD question and answer text must match the visible FAQ text exactly
 
 ## AEO / AI Discovery
 
@@ -88,6 +94,14 @@ AI-facing discovery files:
 - [llms-full.txt](llms-full.txt) - fuller public professional summary, supported highlights, consulting areas and skills summary
 
 These files must stay factual. Do not add private information, credentials, internal IPs, confidential client details, fake metrics, fake testimonials or unsupported claims.
+
+## Design System
+
+- Follow [REDESIGN.md](REDESIGN.md): paper/ink palette with a single vermilion accent, Bricolage Grotesque headings and Hanken Grotesk body text via Google Fonts, sentence case, no all-caps eyebrow labels.
+- Reuse the existing components in [assets/css/site.css](assets/css/site.css) instead of adding new ones: `.btn-primary`/`.btn-ghost`, `.text-link`, `.case` accordion, `.svc` hairline lists, `.steps`, `.cells`, `.facts`, FAQ `<details>`, dark `.closing` CTA and footer.
+- Motion: the orchestrated load animation is homepage-only (`body.home`); elsewhere motion only responds to user actions. Respect `prefers-reduced-motion`.
+- Every page ends with a closing CTA offering "Start a conversation" and the resume, and links to at least three other internal pages from the body with descriptive anchor text.
+- Use en-IN spellings (modernisation, optimisation). Titles follow `Topic | Pratik Purohit` and stay under 60 characters; meta descriptions stay between 140 and 160 characters.
 
 ## Content Rules
 
@@ -107,7 +121,7 @@ These files must stay factual. Do not add private information, credentials, inte
 
 - Keep the site deployable by GitHub Pages without server-side processing.
 - Do not reintroduce PHP files, server-side includes, form handlers or local XAMPP assumptions.
-- Use file-relative paths for local CSS, JavaScript, image, icon, manifest and PDF assets. Root-level pages use paths such as `assets/css/style.css`; directory pages use paths such as `../assets/css/style.css`.
+- Use file-relative paths for local CSS, JavaScript, image, icon, manifest and PDF assets. Root-level pages use paths such as `assets/css/site.css`; directory pages use paths such as `../assets/css/site.css`. Exception: [404.html](404.html) uses root-relative asset paths (`/assets/...`) because GitHub Pages serves it at any missing URL depth.
 - Internal navigation must target clean production directory URLs (`/about/`, `/experience/`, `/projects/`) so canonical, sitemap and internal-link signals all agree. Do not link to `/index.html` variants.
 - Keep absolute `https://pratikpurohit.com/...` URLs for canonical metadata, Open Graph metadata, structured data, `robots.txt` and `sitemap.xml`; use root-relative clean URLs for internal navigation.
 - Keep `mailto:purohitpratik2504@gmail.com` and `tel:+919987511946` as the contact mechanisms.
